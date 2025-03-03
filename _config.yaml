@@ -1,0 +1,6 @@
+title: cetusian
+description: AI Engineer & Low-Level Coder
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
