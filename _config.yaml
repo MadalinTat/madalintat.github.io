@@ -1,6 +1,13 @@
 title: cetusian
 description: AI Engineer & Low-Level Coder
+baseurl: ""
+url: "https://cetusian.com"
 collections:
   projects:
     output: true
     permalink: /projects/:title/
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rogue
+# Force rebuild
+
