@@ -5,6 +5,8 @@ tags: [hardware, low-level, MacOS]
 layout: project
 ---
 
+GitHub Repo: [PS3Eye Driver for Macbook Silicon](https://github.com/madalintat/PS3Eye-Driver-MacOS-Silicon/tree/main)
+
 Lately, I've been obsessed with building hardware, and after discovering this [video](https://joshuabird.com/blog/post/mocap-drones)
 I got so excited I immediately started to get all I needed to build my own drones.
 
