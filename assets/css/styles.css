@@ -359,9 +359,9 @@ nav ul li a:hover {
   font-style: italic;
 }
 
-/* Code blocks - Let Rouge handle colors */
+/* Code blocks - Modified opacity */
 .post-content pre {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;
@@ -500,9 +500,9 @@ nav ul li a:hover {
   font-style: italic;
 }
 
-/* Code blocks - Let Rouge handle colors */
+/* Code blocks - Modified opacity */
 .project-content pre {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;

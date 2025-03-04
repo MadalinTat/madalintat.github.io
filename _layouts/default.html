@@ -29,19 +29,6 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#0f0f0f" />
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ZZNRPGHF1X"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-ZZNRPGHF1X", { anonymize_ip: true });
-    </script>
   </head>
   <body>
     <div class="glow-cursor"></div>
@@ -51,10 +38,10 @@
       <a href="/" class="logo">cetusian();</a>
       <nav>
         <ul>
-          <li><a href="/">home</a></li>
-          <li><a href="/projects/">projects</a></li>
-          <li><a href="/blog/">blog</a></li>
-          <li><a href="/contact/">contact</a></li>
+          <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>home</a></li>
+          <li><a href="/projects/" {% if page.url contains "/projects/" %}class="active"{% endif %}>projects</a></li>
+          <li><a href="/blog/" {% if page.url contains "/blog/" %}class="active"{% endif %}>blog</a></li>
+          <li><a href="/contact/" {% if page.url == "/contact/" %}class="active"{% endif %}>contact</a></li>
         </ul>
       </nav>
     </header>
@@ -66,5 +53,22 @@
     </footer>
 
     <script src="/assets/js/script.js"></script>
+    <script>
+      // Open links in .post-content (blog posts) in a new tab
+      document.addEventListener('DOMContentLoaded', function() {
+        const postLinks = document.querySelectorAll('.post-content a');
+        postLinks.forEach(link => {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer'); // Security and accessibility
+        });
+
+        // Optional: Open links in .project-content (projects) in a new tab
+        const projectLinks = document.querySelectorAll('.project-content a');
+        projectLinks.forEach(link => {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer'); // Security and accessibility
+        });
+      });
+    </script>
   </body>
 </html>
