@@ -45,7 +45,7 @@ The way that the driver works is this:
 > 2. Initialize libusb → set debug level;
 > 3. Open PS3 Eye Camera → print device info;
 > 4. Check and detach kernel driver if needed;
-> 5. Claim interface → initialize camera settings
+> 5. Claim interface → initialize camera settings;
 > 6. Release interface → reattach kernel driver if needed;
 > 7. Clean up and exit.
 

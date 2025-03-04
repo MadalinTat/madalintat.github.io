@@ -353,15 +353,15 @@ nav ul li a:hover {
 .post-content blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
   border-left: 4px solid var(--accent-color);
-  color: var(--secondary-color);
+  color: #c0c0c0;
   font-style: italic;
 }
 
-/* Code blocks - Modified opacity */
+/* Code blocks - Increased opacity for better visibility */
 .post-content pre {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;
@@ -374,9 +374,9 @@ nav ul li a:hover {
   font-family: var(--mono-font);
 }
 
-/* Inline code */
+/* Inline code - Increased opacity for better visibility */
 .post-content p code {
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: rgba(0, 255, 0, 0.2);
   padding: 0.2rem 0.5rem;
   border-radius: 2px;
 }
@@ -494,15 +494,15 @@ nav ul li a:hover {
 .project-content blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
   border-left: 4px solid var(--accent-color);
-  color: var(--secondary-color);
+  color: #c0c0c0;
   font-style: italic;
 }
 
-/* Code blocks - Modified opacity */
+/* Code blocks - Increased opacity for better visibility */
 .project-content pre {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   border-radius: 4px;
   overflow-x: auto;
@@ -515,9 +515,9 @@ nav ul li a:hover {
   font-family: var(--mono-font);
 }
 
-/* Inline code */
+/* Inline code - Increased opacity for better visibility */
 .project-content p code {
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: rgba(0, 255, 0, 0.2);
   padding: 0.2rem 0.5rem;
   border-radius: 2px;
 }
