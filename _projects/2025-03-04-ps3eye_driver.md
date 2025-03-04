@@ -323,4 +323,4 @@ Now, the main goal is getting these cameras to capture video directly on my Macb
 Until next time!
 
 ![Wolly the whale](../../images/wolly_the_whale.jpg)
-_This is Wolly, the Whale. He helped me building the driver._
+_This is Wolly, the Whale. He helped me in building the driver._
