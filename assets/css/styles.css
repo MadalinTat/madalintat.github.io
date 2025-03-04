@@ -242,6 +242,7 @@ nav ul li a:hover {
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
+  margin-top: 1.5rem;
 }
 
 .social-links a {
@@ -359,58 +360,64 @@ nav ul li a:hover {
   font-style: italic;
 }
 
-/* Code blocks - Increased opacity for better visibility */
+/* Code blocks */
 .post-content pre {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto;
+  background: rgba(20, 20, 20, 0.9);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 1.25rem;
   margin: 1.5rem 0;
+  overflow-x: auto;
   font-family: var(--mono-font);
-  line-height: 1.4;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .post-content code {
   font-family: var(--mono-font);
 }
 
-/* Inline code - Increased opacity for better visibility */
+/* Inline code */
 .post-content p code {
-  background-color: rgba(0, 255, 0, 0.2);
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
+  background: rgba(20, 20, 20, 0.9);
+  color: var(--accent-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
 }
 
-/* Solarized Dark-inspired syntax highlighting */
+/* Enhanced syntax highlighting */
 .highlight .k {
-  /* Keywords (e.g., #include, int) */
-  color: #268bd2; /* Blue for keywords */
+  /* Keywords */
+  color: #2b95d6;
+  font-weight: 600;
 }
 
 .highlight .c,
 .highlight .cm {
-  /* Comments (single-line and multi-line) */
-  color: #586e75; /* Gray for comments */
+  /* Comments */
+  color: #657b83;
+  font-style: italic;
 }
 
 .highlight .n {
-  /* Numbers (e.g., 0x1415, 0x2000) */
-  color: #2aa198; /* Cyan for numbers */
+  /* Numbers */
+  color: #2aa198;
 }
 
 .highlight .s {
   /* Strings */
-  color: #b58900; /* Yellow for strings */
+  color: #d08770;
 }
 
 .highlight .p {
-  /* Punctuation (e.g., (), {}, ;) */
-  color: var(--text-color); /* White for punctuation */
+  /* Punctuation */
+  color: #93a1a1;
 }
 
 .highlight .o {
-  /* Operators (e.g., +, -, =) */
-  color: #93a1a1; /* Light gray for operators */
+  /* Operators */
+  color: #cb4b16;
 }
 
 /* Images */
@@ -500,58 +507,64 @@ nav ul li a:hover {
   font-style: italic;
 }
 
-/* Code blocks - Increased opacity for better visibility */
+/* Code blocks */
 .project-content pre {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto;
+  background: rgba(20, 20, 20, 0.9);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 1.25rem;
   margin: 1.5rem 0;
+  overflow-x: auto;
   font-family: var(--mono-font);
-  line-height: 1.4;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-content code {
   font-family: var(--mono-font);
 }
 
-/* Inline code - Increased opacity for better visibility */
+/* Inline code */
 .project-content p code {
-  background-color: rgba(0, 255, 0, 0.2);
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
+  background: rgba(20, 20, 20, 0.9);
+  color: var(--accent-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
 }
 
-/* Solarized Dark-inspired syntax highlighting */
+/* Enhanced syntax highlighting */
 .highlight .k {
-  /* Keywords (e.g., #include, int) */
-  color: #268bd2; /* Blue for keywords */
+  /* Keywords */
+  color: #2b95d6;
+  font-weight: 600;
 }
 
 .highlight .c,
 .highlight .cm {
-  /* Comments (single-line and multi-line) */
-  color: #586e75; /* Gray for comments */
+  /* Comments */
+  color: #657b83;
+  font-style: italic;
 }
 
 .highlight .n {
-  /* Numbers (e.g., 0x1415, 0x2000) */
-  color: #2aa198; /* Cyan for numbers */
+  /* Numbers */
+  color: #2aa198;
 }
 
 .highlight .s {
   /* Strings */
-  color: #b58900; /* Yellow for strings */
+  color: #d08770;
 }
 
 .highlight .p {
-  /* Punctuation (e.g., (), {}, ;) */
-  color: var(--text-color); /* White for punctuation */
+  /* Punctuation */
+  color: #93a1a1;
 }
 
 .highlight .o {
-  /* Operators (e.g., +, -, =) */
-  color: #93a1a1; /* Light gray for operators */
+  /* Operators */
+  color: #cb4b16;
 }
 
 /* Images */
@@ -589,4 +602,62 @@ nav ul li a:hover {
   padding: 0.25rem 0.5rem;
   border-radius: 2px;
   font-size: 0.8rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  transform: translateY(-2px);
 }
